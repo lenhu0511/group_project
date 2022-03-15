@@ -149,7 +149,7 @@
 // }
 
 import 'package:flutter/material.dart';
-import 'package:group_project/profile/components/body.dart';
+import 'package:group_project/screens/profile/components/body.dart';
 
 
 

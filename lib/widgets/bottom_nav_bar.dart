@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:group_project/constants.dart';
-import 'package:group_project/oders/order_screen.dart';
-import 'package:group_project/profile/profile_screen.dart';
-import 'package:group_project/qrcode/qr_code_screen.dart';
+import 'package:group_project/screens/oders/order_screen.dart';
+import 'package:group_project/screens/profile/profile_screen.dart';
+import 'package:group_project/screens/qrcode/qr_code_screen.dart';
 import 'package:group_project/screens/menu/menu_screen.dart';
 import 'package:group_project/screens/login/login_screen.dart';
 
