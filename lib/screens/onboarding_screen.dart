@@ -53,7 +53,7 @@ class OnBoardingScreen extends StatelessWidget {
       );
 
   void goToHome(context) => Navigator.of(context).pushReplacement(
-        MaterialPageRoute(builder: (_) => HomePage()),
+        MaterialPageRoute(builder: (_) => MenuScreen()),
       );
 
   // void goToMenu(context) => Navigator.of(context).pushReplacement(

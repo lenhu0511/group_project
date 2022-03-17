@@ -9,9 +9,8 @@ import 'components/categories.dart';
 import 'components/popular_products.dart';
 import 'components/search_form.dart';
 
-class HomePage extends StatelessWidget {
-  static String routeName = "/home";
-  const HomePage({Key? key}) : super(key: key);
+class MenuScreen extends StatelessWidget {
+  const MenuScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -28,7 +27,7 @@ class HomePage extends StatelessWidget {
       //     ),
       //   ],
       // ),
-  
+
       body: SingleChildScrollView(
         physics: const BouncingScrollPhysics(
             parent: AlwaysScrollableScrollPhysics()),
@@ -36,13 +35,12 @@ class HomePage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            SizedBox(height: defaultPadding *2),
+            SizedBox(height: defaultPadding * 2),
             const Padding(
               padding: EdgeInsets.symmetric(vertical: defaultPadding),
               child: SearchForm(),
             ),
-            //const HomeHeader(),
-             SizedBox(height: defaultPadding ),
+            SizedBox(height: defaultPadding),
             const Discount(),
             SizedBox(height: defaultPadding),
             const Categories(),
@@ -52,7 +50,5 @@ class HomePage extends StatelessWidget {
         ),
       ),
     );
-    
   }
-
 }

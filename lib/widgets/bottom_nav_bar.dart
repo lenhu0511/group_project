@@ -1,27 +1,28 @@
 import 'package:flutter/material.dart';
 import 'package:group_project/constants.dart';
+import 'package:group_project/screens/home/home_screen.dart';
 import 'package:group_project/screens/oders/order_screen.dart';
 import 'package:group_project/screens/profile/profile_screen.dart';
 import 'package:group_project/screens/qrcode/qr_code_screen.dart';
 import 'package:group_project/screens/menu/menu_screen.dart';
 import 'package:group_project/screens/login/login_screen.dart';
 
-class MenuScreen extends StatefulWidget {
-  const MenuScreen({Key? key}) : super(key: key);
+class NavigatorBar extends StatefulWidget {
+  const NavigatorBar({Key? key}) : super(key: key);
 
   @override
-  State<MenuScreen> createState() => _MenuScreenState();
+  State<NavigatorBar> createState() => _NavigatorBarState();
 }
 
-class _MenuScreenState extends State<MenuScreen> {
+class _NavigatorBarState extends State<NavigatorBar> {
   int _selectedIndex = 0;
   static const TextStyle optionStyle = TextStyle(
     fontSize: 30,
     fontWeight: FontWeight.bold,
   );
   static const List<Widget> _widgetOptions = <Widget>[
-    HomePage(),
-    HomePage(),
+    HomeScreen(),
+    MenuScreen(),
     QRCodePage(),
     OrderScreen(),
     ProfileScreen(),

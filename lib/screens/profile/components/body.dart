@@ -14,9 +14,9 @@ class Body extends StatelessWidget {
           ProfilePic(),
           SizedBox(height: 20),
           ProfileMenu(
-            text: "My Account",
+            text: "Edit Profile",
             icon: "assets/icons/User Icon.svg",
-            press: () => {},
+            press: () {},
           ),
           ProfileMenu(
             text: "Notifications",

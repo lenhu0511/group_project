@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:group_project/screens/home/home_screen.dart';
 import 'package:group_project/widgets/rounded_button.dart';
 import 'package:group_project/widgets/rounded_input_field.dart';
 import 'package:group_project/widgets/rounded_password_field.dart';
@@ -44,7 +45,7 @@ class Body extends StatelessWidget {
             children: <Widget>[
               GestureDetector(
                 onTap: () => Navigator.of(context).pushReplacement(
-                    MaterialPageRoute(builder: (_) => MenuScreen())),
+                    MaterialPageRoute(builder: (_) => HomeScreen())),
                 child: Text(
                   "Forgot Password ?",
                   style: TextStyle(
@@ -59,7 +60,7 @@ class Body extends StatelessWidget {
           RoundedButton(
             text: "Sign In",
             press: () => Navigator.of(context).pushReplacement(
-              MaterialPageRoute(builder: (_) => MenuScreen()),
+              MaterialPageRoute(builder: (_) => NavigatorBar()),
             ),
           ),
         ],

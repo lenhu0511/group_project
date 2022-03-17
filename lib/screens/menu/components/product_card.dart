@@ -42,15 +42,19 @@ class ProductCard extends StatelessWidget {
               ),
             ),
             const SizedBox(height: defaultPadding / 2),
-            Row(
+            Column(
               children: [
-                Expanded(
-                  child: Text(
+                Text(
                     title,
                     style: const TextStyle(color: Colors.black),
                   ),
-                ),
-                const SizedBox(width: defaultPadding / 4),
+                // Expanded(
+                //   child: Text(
+                //     title,
+                //     style: const TextStyle(color: Colors.black),
+                //   ),
+                // ),
+                const SizedBox(height: defaultPadding / 4),
                 Text(
                   "\$" + price.toString(),
                   style: Theme.of(context).textTheme.subtitle2,
